@@ -1,0 +1,251 @@
+/* ITCSS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroud-color: #00030c;
+  --text-color: #ffffff;
+  --text-color-secudary: #c0c0c0;
+
+  --primary-color: #005c53;
+  --secundary-color: #9cc21e;
+  --tertiary-color: #dbf227;
+
+  --button-color: #167bf7;
+  --button-hover: #63a2f0;
+
+  --primary-font: "Inter";
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroud-color);
+}
+
+.container {
+  max-width: 100vw;
+  min-height: 31.25rem;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* background-color: beige; */
+}
+
+.principal {
+  background-color: var(--backgroud-color);
+  background-image: url("../img/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.secundario {
+  align-items: center;
+  margin: 6.25em;
+}
+
+.principal-text {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+#combo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20%;
+  padding: 1%;
+
+  width: 36.75rem;
+  height: 26.938rem;
+}
+
+.box-imgButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#combo-img {
+  width: 21.75rem;
+  height: 6.25rem;
+
+  margin: 1em 0 2em 0;
+}
+
+.buttuns {
+  display: flex;
+  flex-direction: column;
+
+  width: 32rem;
+  height: 8rem;
+}
+
+.button {
+  display: flex;
+
+  padding: 1em;
+  margin-bottom: 1em;
+
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  text-decoration: none;
+
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.button-hover:hover {
+  background-color: var(--button-hover);
+}
+
+.button2 {
+  background-color: transparent;
+  border: 2px solid var(--secundary-color);
+  color: var(--text-color-secudary);
+}
+
+.aviso {
+  color: var(--text-color-secudary);
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-size: 0.75em;
+}
+
+.principal-text {
+  color: var(--text-color);
+}
+
+.titulo-descricao {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 120%;
+  color: var(--text-color);
+}
+
+.container-descricao {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  width: 90%;
+}
+
+.telas-descricao {
+  align-items: center;
+}
+
+.img-secundaria {
+  width: 80%;
+}
+
+.assinar {
+  margin: 10px;
+  width: fit-content;
+}
+
+.dispositivos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  min-height: 37.5rem;
+
+  margin: 5em 0;
+
+  /* background-color: beige; */
+}
+
+.img-dispositivos {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.lista-itens {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 120%;
+
+  text-align: center;
+  color: var(--text-color);
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4em;
+  padding: 0px 3.125em;
+}
+
+.rodape-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 1.875em;
+  margin: 1em;
+}
+
+.list-rodape {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+
+  text-decoration: none;
+
+  color: var(--text-color);
+}
+
+.list-rodape:hover {
+  color: var(--button-color);
+}
+
+.text-rodape {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 150%;
+  text-align: center;
+  color: var(--text-color-secudary);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
